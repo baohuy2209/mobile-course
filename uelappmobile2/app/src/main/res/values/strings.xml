@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">uel-app-mobile-2</string>
+    <string name="sample_image">Sample Image</string>
+    <string name="close">Close</string>
+    <string name="change">Change</string>
+    <string name="user_icon">User Icon</string>
+    <string name="nhap_email">Nhập email</string>
+    <string name="mat_khau">Mật khẩu</string>
+    <string name="nhap_mat_khau">Nhập mật khẩu</string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="auth_title">Màn hình đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="discard">DISCARD</string>
+    <string name="upload">UPLOAD</string>
+    <string name="settings">Settings</string>
+    <string name="leica_m_typ_240">Leica M Typ 240</string>
+    <string name="camera">Camera</string>
+    <string name="halong_bay">HaLong Bay</string>
+    <string name="star">Star</string>
+    <string name="ha_long_bay">Ha long bay</string>
+</resources>

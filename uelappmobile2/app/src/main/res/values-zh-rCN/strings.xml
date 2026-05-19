@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">uel-app-mobile-2</string>
+    <string name="sample_image">示例图片</string>
+    <string name="close">关闭</string>
+    <string name="change">更改</string>
+    <string name="user_icon">用户图标</string>
+    <string name="nhap_email">输入电子邮件</string>
+    <string name="mat_khau">密码</string>
+    <string name="nhap_mat_khau">输入密码</string>
+    <string name="dang_nhap">登录</string>
+    <string name="auth_title">登录界面</string>
+    <string name="email">电子邮件</string>
+</resources>

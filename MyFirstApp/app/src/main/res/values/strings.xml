@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="text_view_1">Text View 1</string>
+    <string name="footer">footer</string>
+    <string name="navbar">Navbar</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="hor1">Hor1</string>
+    <string name="button">Button</string>
+    <string name="email">Email</string>
+    <string name="nhap_email">Nhập email</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="user_image">User Image</string>
+    <string name="man_hinh_dang_nhap">Màn hình đăng nhập</string>
+    <string name="dang_nhap">Đăng nhập</string>
+</resources>

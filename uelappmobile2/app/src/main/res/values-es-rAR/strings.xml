@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">uel-app-mobile-2</string>
+    <string name="sample_image">Imagen de muestra</string>
+    <string name="close">Cerrar</string>
+    <string name="change">Cambiar</string>
+    <string name="user_icon">Ícono de usuario</string>
+    <string name="nhap_email">Ingresá tu email</string>
+    <string name="mat_khau">Contraseña</string>
+    <string name="nhap_mat_khau">Ingresá tu contraseña</string>
+    <string name="dang_nhap">Iniciar sesión</string>
+    <string name="auth_title">Pantalla de inicio de sesión</string>
+    <string name="email">Email</string>
+</resources>

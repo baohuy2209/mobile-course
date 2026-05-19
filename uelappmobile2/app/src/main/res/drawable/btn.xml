@@ -1,0 +1,8 @@
+<!-- res/drawable/btn_red.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#FFFFFF"
+        android:endColor="#D0D0D0"
+        android:angle="270" />
+    <corners android:radius="24dp" />
+</shape>

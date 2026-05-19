@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">uel-app-mobile-2</string>
+    <string name="sample_image">Sample Image</string>
+    <string name="close">Close</string>
+    <string name="change">Change</string>
+    <string name="user_icon">User Icon</string>
+    <string name="nhap_email">Enter email</string>
+    <string name="mat_khau">Password</string>
+    <string name="nhap_mat_khau">Enter password</string>
+    <string name="dang_nhap">Login</string>
+    <string name="auth_title">Login Screen</string>
+    <string name="email">Email</string>
+</resources>
