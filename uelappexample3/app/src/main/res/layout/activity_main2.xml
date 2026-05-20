@@ -13,13 +13,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:text="Show up"
+        android:text="@string/show_up"
         android:backgroundTint="#AF2F2F"/>
     <Button
         android:id="@+id/btnShowToast1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:text="Show Alert Dialog"
+        android:text="@string/show_alert_dialog"
+        android:backgroundTint="#AF2F2F"/>
+    <Button
+        android:id="@+id/btnShowCustomDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/show_custom_dialog"
+        android:backgroundTint="#AF2F2F"/>
+    <Button
+        android:id="@+id/btnShowCustomDialogUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Show Bottom Sheet"
+        android:backgroundTint="#AF2F2F"/>
+    <Button
+        android:id="@+id/btnShowCustomDialogDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Show Top Sheet"
         android:backgroundTint="#AF2F2F"/>
 </LinearLayout>

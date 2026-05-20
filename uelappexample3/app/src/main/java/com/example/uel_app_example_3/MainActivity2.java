@@ -1,8 +1,15 @@
 package com.example.uel_app_example_3;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -50,6 +57,95 @@ public class MainActivity2 extends AppCompatActivity {
                 AlertDialog dialog = builder.create();
                 // Không cho tương tác bên ngoài
                 dialog.setCanceledOnTouchOutside(false);
+                dialog.show();
+            }
+        });
+        binding.btnShowCustomDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Dialog dialog = new Dialog(MainActivity2.this);
+                dialog.setContentView(R.layout.custom_dialog);
+                ImageView imvOke = dialog.findViewById(R.id.btnOke);
+                ImageView imvClose = dialog.findViewById(R.id.btnClose);
+                dialog.setCanceledOnTouchOutside(false);
+                imvOke.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        finish();
+                    }
+                });
+                imvClose.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
+                    }
+                });
+                if (dialog.getWindow() != null) {
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.getWindow().setLayout(
+                            ViewGroup.LayoutParams.MATCH_PARENT,
+                            ViewGroup.LayoutParams.WRAP_CONTENT
+                    );
+                }
+                dialog.show();
+            }
+        });
+        binding.btnShowCustomDialogUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Dialog dialog = new Dialog(MainActivity2.this, R.style.DialogSlideUp);
+                dialog.setContentView(R.layout.bottom_sheet);
+                LinearLayout gal = dialog.findViewById(R.id.gallery);
+                gal.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(MainActivity2.this, "Open Gallery", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                LinearLayout cam = dialog.findViewById(R.id.camera);
+                gal.setOnClickListener(new View.OnClickListener(){
+
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(MainActivity2.this,"Open Camera", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                if (dialog.getWindow() != null){
+                   dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                   dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                   dialog.getWindow().setGravity(Gravity.BOTTOM);
+                }
+                dialog.show();
+            }
+        });
+        binding.btnShowCustomDialogDown.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Dialog dialog = new Dialog(MainActivity2.this, R.style.DialogSlideDown);
+                dialog.setContentView(R.layout.bottom_sheet);
+                LinearLayout gal = dialog.findViewById(R.id.gallery);
+                gal.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(MainActivity2.this, "Open Gallery", Toast.LENGTH_SHORT).show();
+                        dialog.dismiss();
+                    }
+                });
+                LinearLayout cam = dialog.findViewById(R.id.camera);
+                gal.setOnClickListener(new View.OnClickListener(){
+
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
+                        Toast.makeText(MainActivity2.this,"Open Camera", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                if (dialog.getWindow() != null){
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                    dialog.getWindow().setGravity(Gravity.TOP);
+                }
                 dialog.show();
             }
         });

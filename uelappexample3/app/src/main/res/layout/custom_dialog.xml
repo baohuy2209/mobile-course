@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/bg_dialog"
+    android:layout_marginHorizontal="20dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_n_c_ch_c_mu_n_tho_t_app"
+        android:textSize="20sp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="20dp" android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btnOke"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_oke"
+            android:contentDescription="oke"/>
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/rounded_adjust_24"
+            android:contentDescription="Close"/>
+    </LinearLayout>
+
+
+</LinearLayout>

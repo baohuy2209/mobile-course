@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">uel-app-example-3</string>
+    <string name="show_up">Show up</string>
+    <string name="show_alert_dialog">Show Alert Dialog</string>
+    <string name="show_custom_dialog">Show Custom Dialog</string>
+    <string name="b_n_c_ch_c_mu_n_tho_t_app">Bạn có chắc muốn thoát app?</string>
 </resources>
