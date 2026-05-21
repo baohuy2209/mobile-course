@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">View_P2</string>
+    <string-array name="Foods">
+        <item>Bún đậu</item>
+        <item>Bún thịt nướng</item>
+        <item>
+            Bún chả
+        </item>
+        <item>Bún quẩy</item>
+        <item>Bún nước lèo vị trà sửa</item>
+        <item>Bún tháii</item>
+        <item>Bún bò</item>
+    </string-array>
+</resources>
