@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Gravity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,9 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.example.models.product;
 import com.example.view_p2.databinding.ActivityMain2Binding;
@@ -32,8 +36,20 @@ public class MainActivity2 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         binding = ActivityMain2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+//        View root = binding.getRoot();
+//        ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
+//            Insets sysBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//
+//            int left = v.getPaddingLeft();
+//            int right = v.getPaddingRight();
+//            int bottom = v.getPaddingBottom();
+//            int topBase = v.getPaddingTop();
+//            v.setPadding(left, topBase + sysBars.top, right, bottom + sysBars.bottom);
+//            return insets;
+//        });
+//        ViewCompat.requestApplyInsets(root);
         initAdapter();
-
+        registerForContextMenu(binding.listViewPr);
         connectEvents();
     }
 
@@ -55,6 +71,7 @@ public class MainActivity2 extends AppCompatActivity {
                 binding.edtName.setText("");
                 binding.edtName.requestFocus();
 
+                binding.edtPrice.setText("");
                 binding.edtName.setFocusable(true);
             }
         });
@@ -92,16 +109,40 @@ public class MainActivity2 extends AppCompatActivity {
         });
     }
 
-    // Menu
+    // Option context
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.mnAbout){
+            Toast.makeText(this, "About...", Toast.LENGTH_SHORT).show();
+        }else if (item.getItemId() == R.id.mnSettings){
+            Toast.makeText(this, "Settings...", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    // Menu context
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        getMenuInflater().inflate(R.menu.context_menu, menu);
         super.onCreateContextMenu(menu, v, menuInfo);
     }
 
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.menuEdit){
+            Toast.makeText(this, "Edit...", Toast.LENGTH_SHORT).show();
+        }else if (item.getItemId() == R.id.menuDelete){
+            Toast.makeText(this, "Deleting...", Toast.LENGTH_SHORT).show();
+        }
         return super.onContextItemSelected(item);
     }
+
 }

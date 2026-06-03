@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- layout/item_cart.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@android:color/white">
+
+    <!-- Checkbox chọn sản phẩm -->
+    <CheckBox
+        android:id="@+id/cbSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:buttonTint="#EE4D2D"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:layout_marginEnd="10dp" />
+
+    <!-- Thông tin sản phẩm -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Tên sản phẩm -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Biến thể: màu, size -->
+        <TextView
+            android:id="@+id/txtVariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:background="@drawable/bg_variant"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Hàng: Giá + Số lượng + Xóa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Cột giá -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Giá hiện tại -->
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#EE4D2D"
+                    android:textStyle="bold" />
+
+                <!-- Giá gốc (gạch ngang) -->
+                <TextView
+                    android:id="@+id/txtOriginalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="#AAAAAA"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Bộ điều chỉnh số lượng + nút xóa -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_quantity_control">
+
+                <!-- Nút giảm -->
+                <ImageButton
+                    android:id="@+id/btnDecrease"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_minus"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Giảm số lượng" />
+
+                <!-- Số lượng -->
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    android:layout_width="32dp"
+                    android:layout_height="28dp"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="#333333" />
+
+                <!-- Nút tăng -->
+                <ImageButton
+                    android:id="@+id/btnIncrease"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_plus"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:backgroundTint="#EE4D2D"
+                    android:contentDescription="Tăng số lượng" />
+
+            </LinearLayout>
+
+            <!-- Nút xóa -->
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_delete"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:color="#AAAAAA"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Xóa sản phẩm" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

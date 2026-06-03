@@ -138,6 +138,7 @@ public class MainActivity2 extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         dialog.dismiss();
+
                         Toast.makeText(MainActivity2.this,"Open Camera", Toast.LENGTH_SHORT).show();
                     }
                 });

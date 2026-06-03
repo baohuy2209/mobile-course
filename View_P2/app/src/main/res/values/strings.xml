@@ -11,4 +11,17 @@
         <item>Bún tháii</item>
         <item>Bún bò</item>
     </string-array>
+
+    <string-array name="auto_complete_text_view">
+        <item>Hà Nội</item>
+        <item>Hải Phòng</item>
+        <item>Thái Bình</item>
+        <item>Thành phố Hồ Chí Minh</item>
+        <item>Bình Dương</item>
+        <item>Bình Định</item>
+        <item>Đồng Nai</item>
+        <item>Gia Lai</item>
+        <item>Hà Giang</item>
+        <item>Cà Mau</item>
+    </string-array>
 </resources>
