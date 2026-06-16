@@ -11,6 +11,12 @@
     android:layout_gravity="center"
     android:padding="12dp">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="12dp"
+        android:src="@drawable/a"/>
+
     <GridView
         android:id="@+id/gvSanpham"
         android:layout_width="match_parent"

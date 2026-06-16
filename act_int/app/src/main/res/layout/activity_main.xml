@@ -18,5 +18,42 @@
         android:textStyle="bold"
         android:backgroundTint="#DB1A1A"
         android:textColor="@color/white"/>
-
+    <Button
+        android:id="@+id/btnTest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Activity #3"
+        android:textStyle="bold"
+        android:backgroundTint="#DB1A1A"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btnTest2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Activity #3 and send data"
+        android:textStyle="bold"
+        android:backgroundTint="#DB1A1A"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingTop="12dp"
+        android:layout_marginTop="14dp"/>
+    <Button
+        android:id="@+id/btnSt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="#D32121"
+        android:layout_marginVertical="4dp"/>
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Huy"
+        android:gravity="center"/>
 </LinearLayout>
