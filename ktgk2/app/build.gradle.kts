@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.nguyenbaohuy.ktgk"
+    namespace = "com.nguyenbaohuy.ktgk2"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.nguyenbaohuy.ktgk"
+        applicationId = "com.nguyenbaohuy.ktgk2"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -33,7 +33,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    buildFeatures { viewBinding = true }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {

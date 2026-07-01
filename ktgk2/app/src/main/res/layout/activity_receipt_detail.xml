@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiptDetailActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/txtReceiptTitlle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Chi tiết món ăn: Banh"
+        android:textSize="24sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/txtReceiptName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: Bánh canh"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/txtReceiptNat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nguyên liệu: "
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/txtReceiptCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cách làm: "
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/txtReceiptTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thời gian nấu: "
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/txtReceiptLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Độ khó: "
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <ImageView
+        android:id="@+id/txtReceiptImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:src="@drawable/receipt1"/>
+</LinearLayout>

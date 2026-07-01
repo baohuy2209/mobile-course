@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cap nhat công thức"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/edtReceiptName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên công thức"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingVertical="8dp"/>
+    <EditText
+        android:id="@+id/edtReceiptNat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nguyên liệu"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:lines="4"
+        android:gravity="top"
+        android:paddingVertical="8dp"/>
+    <EditText
+        android:id="@+id/edtReceipCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cách làm"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:lines="4"
+        android:gravity="top"
+        android:paddingVertical="8dp"/>
+    <EditText
+        android:id="@+id/edtReceiptTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thoi gian nau"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingVertical="8dp"/>
+    <EditText
+        android:id="@+id/edtReceiptLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Do kho"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingVertical="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hình ảnh món ăn"
+        android:textStyle="bold"
+        android:layout_marginVertical="6dp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btnChooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm ảnh (Chụp/ Tải lên)"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#F20808"
+        android:textColor="@color/white"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="8dp"
+        android:background="#EBE5E5">
+        <LinearLayout
+            android:id="@+id/lnrImages"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:gravity="end">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FF0C"
+            android:text="Add" />
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF1100"
+            android:text="Cancel" />
+    </LinearLayout>
+</LinearLayout>
